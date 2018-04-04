@@ -17,7 +17,7 @@ class Repos extends Component {
     }
 
     /*
-    *input is changed
+    *the input was changed
     *@e
     */ 
     onChange = (e) => {

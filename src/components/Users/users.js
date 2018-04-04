@@ -17,17 +17,17 @@ class Users extends Component {
   }
 
   /*
-  *  
+  *get data for the table from the API
   */ 
-  fetchData() {
-    // Whenever the table model changes, or the user sorts or changes pages, this method gets called and passed the current table model.
-    // You can set the `loading` prop of the table to true to use the built-in one or show you're own loading bar if you want.
+  fetchData() {    
     this.setState({ loading: true });  
+    //call the rest Api
     UserFunctions(this.successCallback.bind(this));
   }
 
   /*
-  *  
+  *sucsecc callback function 
+  @res - the returned users
   */
   successCallback(res){    
     this.setState({

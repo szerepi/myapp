@@ -49,3 +49,7 @@ ul.header li a {
 .label {
   padding-right: 10px;
 }
+
+.ReactTable {
+  display: block;
+}
